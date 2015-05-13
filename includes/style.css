@@ -1,11 +1,50 @@
+#errorImg {
+    width:18px;
+    height:20px;
+    padding-right:5px;
+    vertical-align: middle;
+}
+
+#appt {
+  padding-left: 20px;   
+}
+
+#transparentTable, #outerTable{
+    padding: 20px;
+    padding-left: 30px;
+    border: 0px;
+    border-collapse: collapse;
+    background-color: #9CC8DC;
+}
+
+#transparentTable td {
+    border: 0px;
+    text-align: left;
+    padding-left: 20px;
+    padding: 5px;
+}
+
+#outerTable td {
+    border: 0px;
+    text-align: left;
+    padding-left: 20px;
+    float: left;
+}
+
+#accept{
+    box-sizing: border-box;
+    background-size: auto;
+}
+
 #error, #printDiv{
     padding-top: 20px;
     padding-left: 20px;
+    vertical-align: bottom;
 }
 
 #list, #selectGroup, #addWeekForm, p2 {
     padding-left: 35px;
-    padding-top: 0px;
+    padding: 20px;
 }
 
 #submit, #printDetail {
@@ -62,12 +101,14 @@ body{
 
 #menu li {
     display: inline;
-    padding: 30px;
+    padding left: 80px;
     text-align: center;
+    padding-right: 80px;
+    word-wrap: normal;
 }
 
 #menu {
-    float: center;
+    float: inherit;
     text-align: center;
 }
 
@@ -86,13 +127,13 @@ aside {
 
 #center {
     padding: 10px;
-    float: center;
-    width: 1100px;
+    width:auto;
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 #home {
-    width: 900px;
+    width: auto;
     padding-left: 20px;
 }
 
@@ -122,6 +163,7 @@ ul {
     list-style-type: none;
     padding-left: 0px;
     padding-top: 0px;
+
 }
 
 ul li {

@@ -6,9 +6,10 @@ require 'CommonMethods.php';
 $debug = true;
 $COMMON = new Common($debug);
 
-require 'Student.php';
-//require 'Calendar.php';
-//$CALENDAR = new Calendar();
+require 'Advisor.php';
+require 'student.php';
+require 'calendar.php';
+$CALENDAR = new calendar();
 
 $errors = array();
 ?>

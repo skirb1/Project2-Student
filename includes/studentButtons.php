@@ -1,7 +1,19 @@
 <div id="printDiv">
     <form name="printForm">
-        <input type="button" name="edit" onClick="header('location: SelectAppt.php')" value="Edit">
-        <input type="button" name="cancel" onClick="header('location: CancelAppt.php')" value="Cancel">
-        <input type="button" name="print" onClick="window.print()" value="Print">
+        
+        
+  
+    <input type="button" value="Cancel" onclick="parent.location='cancelAppt.php'">
+    <button id="printBtn">Print</button>
+        
+        <script>
+            var btn = document.getElementById('printBtn');
+            btn.addEventListener('click', function() 
+                {
+                    window.print();
+                });
+        </script>
+
+  
     </form>
 </div>
