@@ -10,7 +10,7 @@ function name_from_studentID($studentID)
     $record = $COMMON->executeQuery($sql, $_SERVER["Student.php"]);
     if($record !== false)
     {
-     $student = mysql_fetch_row($record);
+        $student = mysql_fetch_row($record);
         $name = $student[1]." ".$student[2];
     }
     

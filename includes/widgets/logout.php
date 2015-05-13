@@ -4,9 +4,9 @@
 <?php
    if(array_key_exists('studentID', $_SESSION))
    {
-     echo name_from_studentID($_SESSION['studentID']);
+     echo " ".name_from_studentID($_SESSION['studentID']);
    }
-   
+  
 ?>
 </p>
   <div class="inner">

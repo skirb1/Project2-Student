@@ -37,17 +37,6 @@ function toggle(source, name) {
     }
         ?><tr><td><input type="checkbox" onClick="toggle(this, 'dates[]')" checked/><b>Select All</b></td></tr></table></div></td>
       
-    <td><div id="selectTitle">Select times:</div>
-    <div id="selectGroup"><table id="transparentTable">
-<?php
-    foreach($apptTimes as $time){
-      echo "<tr><td><input type=\"checkbox\" name=\"times[]\" value=\"".db_time($time)."\" checked>";
-      echo display_time($time)."</td>";
-      echo "</tr>";
-    }
-?>
-        <tr><td><input type="checkbox" onClick="toggle(this, 'times[]')" checked/><b>Select All</b></td></tr></table></div></td>
-      
     <td><div id="selectTitle">Appointment Type:</div>
     <div id="selectGroup"><table id="transparentTable">
     <tr><td><input type="radio" name="type" value="indiv" required>Individual
